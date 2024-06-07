@@ -9,13 +9,13 @@ import builder.components.TripComputer
 
 class Director {
 
-    fun constructSportsCar(builder : Builder){
-        builder.setCarType(CarType.SPORT_CAR)
-        builder.setSeats(2)
-        builder.setEngine(Engine(3.0,0.0))
-        builder.setTransmission(Transmission.SEMI_AUTOMATIC)
-        builder.setTripComputer(TripComputer())
-        builder.setGPSNavigator(GPSNavigator())
+    fun constructSportsCar(builder : Builder?){
+        builder?.setCarType(CarType.SPORT_CAR)
+        builder?.setSeats(2)
+        builder?.setEngine(Engine(3.0,0.0))
+        builder?.setTransmission(Transmission.SEMI_AUTOMATIC)
+        builder?.setTripComputer(TripComputer())
+        builder?.setGPSNavigator(GPSNavigator())
     }
 
     fun constructCityCar(builder : Builder){

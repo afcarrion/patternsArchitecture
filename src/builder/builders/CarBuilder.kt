@@ -12,7 +12,7 @@ class CarBuilder : Builder {
     private var seats : Int = 0
     private lateinit var engine : Engine
     private lateinit var transmission : Transmission
-    private lateinit var tripComputer : TripComputer
+    private var tripComputer : TripComputer? = null
     private lateinit var gpsNavigator : GPSNavigator
 
     override fun setCarType(type : CarType) {
